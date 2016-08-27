@@ -3,7 +3,7 @@
 
     <groupId>net.biville.florent</groupId>
     <artifactId>legacy-neo4j-jdbc</artifactId>
-    <version>2.3.0</version>
+    <version>2.3.1-SNAPSHOT</version>
     <name>Neo4j JDBC Driver</name>
 
     <description>Legacy Neo4j JDBC Driver</description>
@@ -38,7 +38,7 @@
         <url>https://github.com/fbiville/neo4j-jdbc-2x</url>
         <connection>scm:git:git@github.com:fbiville/neo4j-jdbc-2x.git</connection>
         <developerConnection>scm:git:git@github.com:fbiville/neo4j-jdbc-2x.git</developerConnection>
-      <tag>v2.3.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <licenses>
