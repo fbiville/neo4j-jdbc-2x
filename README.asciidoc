@@ -5,7 +5,24 @@ image:https://api.travis-ci.org/fbiville/neo4j-jdbc-2x.svg?branch=master["Build 
 This is the JDBC driver for the graph database Neo4j (version 2.x).
 While Neo4j is a graph database, and JDBC is based on the relational paradigm, this driver provides a way to bridge this gap.
 
+For the official Neo4j v2 driver, please see https://github.com/neo4j-contrib/neo4j-jdbc.
 For Neo4j v3 (supports also REST API of Neo4j v2), please use https://github.com/neo4j-contrib/neo4j-jdbc[the new JDBC driver].
+
+== Why a fork? ==
+
+This project is a minimal fork mainly aiming for easy maintenance.
+It is build with Travis CI, is backwards compatible with Neo4j 2.0.x and define a single branch of development.
+It includes all the fixes that have been implemented in the official legacy driver, for ALL versions of Neo4j down to 2.0.x.
+
+The dependency is available as:
+
+----------------------------------------------------
+    <dependency>
+        <groupId>net.biville.florent</groupId>
+        <artifactId>legacy-neo4j-jdbc</artifactId>
+        <version>2.3.0</version>
+    </dependency>    
+----------------------------------------------------
 
 == Legacy vs current Neo4j JDBC driver matrix
 
