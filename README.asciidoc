@@ -71,6 +71,8 @@ try(Statement stmt = con.createStatement())
 
 === Maven dependency ===
 
+The example features Neo4j v2.3.6, but it could be any version down to 2.0.x.
+
 -----------------------------------------------------------------------------
 <project>
 
@@ -78,38 +80,29 @@ try(Statement stmt = con.createStatement())
 
   <dependencies>
     <dependency>
-      <groupId>org.neo4j</groupId>
-      <artifactId>neo4j-jdbc</artifactId>
-      <version>2.3.2</version>
+      <groupId>net.biville.florent</groupId>
+      <artifactId>legacy-neo4j-jdbc</artifactId>
+      <version>2.3.0</version>
     </dependency>
-
-    <!-- For file and in-memory support, add these two as well -->
+    <!-- For file and in-memory support, add these others as well -->
     <dependency>
       <groupId>org.neo4j</groupId>
       <artifactId>neo4j</artifactId>
-      <version>2.3.2</version>
+      <version>2.3.6</version>
     </dependency>
     <dependency>
       <groupId>org.neo4j</groupId>
       <artifactId>neo4j-kernel</artifactId>
-      <version>2.3.2</version>
+      <version>2.3.6</version>
       <type>test-jar</type>
     </dependency>
-    <dependency>
+    <dependency><!-- only for Neo4j versions >= 2.2.x -->
       <groupId>org.neo4j</groupId>
       <artifactId>neo4j-io</artifactId>
-      <version>2.3.2</version>
+      <version>2.3.6</version>
       <type>test-jar</type>
     </dependency>
   </dependencies>
-
-  <repositories>
-    <repository>
-      <id>neo4j-public</id>
-      <url>http://m2.neo4j.org/content/groups/public</url>
-    </repository>
-  </repositories>
-</project>
 -----------------------------------------------------------------------------
 
 === Usage ===
